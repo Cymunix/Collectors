@@ -1,0 +1,115 @@
+[browser] A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <RenderFromTemplateContext>
+      <ScrollAndMaybeFocusHandler cacheNode={{rsc:{...}, ...}}>
+        <InnerScrollAndFocusHandlerOld focusAndScrollRef={{scrollRef:null, ...}} cacheNode={{rsc:{...}, ...}}>
+          <ErrorBoundary errorComponent={undefined} errorStyles={undefined} errorScripts={undefined}>
+            <LoadingBoundary name="/" loading={null}>
+              <HTTPAccessFallbackBoundary notFound={{...}} forbidden={undefined} unauthorized={undefined}>
+                <HTTPAccessFallbackErrorBoundary pathname="/" notFound={{...}} forbidden={undefined} ...>
+                  <RedirectBoundary>
+                    <RedirectErrorBoundary router={{...}}>
+                      <InnerLayoutRouter url={"/?code=4..."} tree={[...]} params={{}} cacheNode={{rsc:{...}, ...}} ...>
+                        <SegmentViewNode type="page" pagePath="page.tsx">
+                          <SegmentTrieNode>
+                          <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                            <Home params={Promise} searchParams={Promise}>
+                              <main
+                                className="home-screen"
+-                               data-dashlane-rid="45c1d974f5b4506f"
+                              >
+                                <header className="topbar">
+                                  <a>
+                                  <div className="topbar-main">
+                                    <button>
+                                    <label
+                                      className="search-box"
+-                                     data-dashlane-label="true"
+                                    >
+                                      <Icon>
+                                      <input
+                                        type="search"
+                                        placeholder="Search for Collectables..."
+-                                       data-dashlane-rid="4f9655e9c5eac970"
+                                      >
+                                  <div className="topbar-act...">
+                                    <button
+                                      className="language-button"
+                                      type="button"
+-                                     data-dashlane-label="true"
+-                                     data-dashlane-rid="18eeebc5ef9f6198"
+                                    >
+                                    <button
+                                      className="login-button"
+                                      type="button"
+                                      onClick={function}
+-                                     data-dashlane-label="true"
+-                                     data-dashlane-rid="c29c9170dfb793ff"
+                                    >
++                                     Login / Sign Up
+                                    ...
+                                <nav className="nav-row" aria-label="Primary">
+                                  <button
+                                    className="nav-pill nav-pill-locked"
+                                    type="button"
+                                    onClick={function onClick}
+                                    aria-disabled={true}
+-                                   data-dashlane-label="true"
+-                                   data-dashlane-rid="d1bbcdf57a815556"
+                                  >
+                                  <button
+                                    className="nav-pill"
+                                    type="button"
+                                    onClick={function onClick}
+                                    aria-disabled={false}
+-                                   data-dashlane-label="true"
+-                                   data-dashlane-rid="185b8806392c284b"
+                                  >
+                                  <button
+                                    className="nav-pill nav-pill-locked"
+                                    type="button"
+                                    onClick={function onClick}
+                                    aria-disabled={true}
+-                                   data-dashlane-label="true"
+-                                   data-dashlane-rid="ddd2e983047b232d"
+                                  >
+                                  <button
+                                    className="nav-pill nav-pill-locked"
+                                    type="button"
+                                    onClick={function onClick}
+                                    aria-disabled={true}
+-                                   data-dashlane-label="true"
+-                                   data-dashlane-rid="ff7f2dd698a4c598"
+                                  >
+                                  <button
+                                    className="nav-pill"
+                                    type="button"
+                                    onClick={function onClick}
+                                    aria-disabled={false}
+-                                   data-dashlane-label="true"
+-                                   data-dashlane-rid="64cbf9bc6c071fc5"
+                                  >
+                                  <button
+                                    className="nav-pill"
+                                    type="button"
+                                    onClick={function onClick}
+                                    aria-disabled={false}
+-                                   data-dashlane-label="true"
+-                                   data-dashlane-rid="3b67306f2268f5cc"
+                                  >
+                                ...
+                        ...
+                      ...
+          ...
+ 

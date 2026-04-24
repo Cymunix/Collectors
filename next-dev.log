@@ -1,0 +1,69 @@
+
+> collectorshub@0.1.0 dev
+> next dev --hostname 127.0.0.1 --port 3000
+
+▲ Next.js 16.2.4 (Turbopack)
+- Local:         http://127.0.0.1:3000
+- Network:       http://127.0.0.1:3000
+- Environments: .env.local
+✓ Ready in 267ms
+
+ GET / 200 in 243ms (next.js: 43ms, proxy.ts: 92ms, application-code: 108ms)
+ GET / 200 in 32ms (next.js: 3ms, proxy.ts: 4ms, application-code: 25ms)
+✓ Compiled in 37ms
+ GET / 200 in 130ms (next.js: 52ms, proxy.ts: 32ms, application-code: 45ms)
+✓ Compiled in 34ms
+ GET / 200 in 94ms (next.js: 27ms, proxy.ts: 30ms, application-code: 36ms)
+✓ Compiled in 22ms
+ GET / 200 in 82ms (next.js: 28ms, proxy.ts: 26ms, application-code: 28ms)
+✓ Compiled in 8ms
+✓ Compiled in 39ms
+ GET / 200 in 83ms (next.js: 27ms, proxy.ts: 26ms, application-code: 29ms)
+✓ Compiled in 49ms
+ GET / 200 in 834ms (next.js: 441ms, proxy.ts: 336ms, application-code: 58ms)
+ GET / 200 in 284ms (next.js: 3ms, proxy.ts: 5ms, application-code: 276ms)
+ GET /auth/confirm?code=465c550d-b006-45ed-8504-9a05fe12e1b3 307 in 545ms (next.js: 534ms, proxy.ts: 3ms, application-code: 8ms)
+ GET /?code=465c550d-b006-45ed-8504-9a05fe12e1b3&auth_error=confirmation_failed 200 in 26ms (next.js: 2ms, proxy.ts: 4ms, application-code: 20ms)
+✓ Compiled in 20ms
+ GET / 200 in 365ms (next.js: 48ms, proxy.ts: 297ms, application-code: 21ms)
+ GET /my-collection 200 in 1108ms (next.js: 431ms, proxy.ts: 5ms, application-code: 672ms)
+ GET /my-collection 200 in 686ms (next.js: 59ms, proxy.ts: 444ms, application-code: 183ms)
+ GET /my-collection 200 in 252ms (next.js: 2ms, proxy.ts: 164ms, application-code: 85ms)
+ GET /my-collection 200 in 89ms (next.js: 3ms, proxy.ts: 7ms, application-code: 79ms)
+ GET /my-collection 200 in 81ms (next.js: 2ms, proxy.ts: 7ms, application-code: 71ms)
+ GET /my-collection 200 in 87ms (next.js: 2ms, proxy.ts: 7ms, application-code: 79ms)
+ GET /my-collection 200 in 85ms (next.js: 2ms, proxy.ts: 7ms, application-code: 75ms)
+ GET /my-collection 200 in 83ms (next.js: 3ms, proxy.ts: 9ms, application-code: 71ms)
+ GET /my-collection 200 in 105ms (next.js: 3ms, proxy.ts: 6ms, application-code: 96ms)
+ GET /my-collection 200 in 101ms (next.js: 4ms, proxy.ts: 8ms, application-code: 89ms)
+ GET /my-collection 200 in 84ms (next.js: 2ms, proxy.ts: 12ms, application-code: 69ms)
+ GET /my-collection 200 in 79ms (next.js: 3ms, proxy.ts: 7ms, application-code: 69ms)
+ GET /my-collection 200 in 76ms (next.js: 2ms, proxy.ts: 6ms, application-code: 68ms)
+ GET /my-collection 200 in 78ms (next.js: 2ms, proxy.ts: 10ms, application-code: 65ms)
+ GET /my-collection 200 in 72ms (next.js: 2ms, proxy.ts: 6ms, application-code: 64ms)
+ GET /my-collection 200 in 71ms (next.js: 3ms, proxy.ts: 4ms, application-code: 64ms)
+ GET /my-collection 200 in 70ms (next.js: 3ms, proxy.ts: 8ms, application-code: 59ms)
+ GET /my-collection 200 in 84ms (next.js: 3ms, proxy.ts: 5ms, application-code: 77ms)
+ GET /my-collection 200 in 88ms (next.js: 1993µs, proxy.ts: 9ms, application-code: 78ms)
+ GET /my-collection 200 in 88ms (next.js: 3ms, proxy.ts: 13ms, application-code: 72ms)
+ GET /my-collection 200 in 76ms (next.js: 3ms, proxy.ts: 6ms, application-code: 67ms)
+ GET /my-collection 200 in 73ms (next.js: 2ms, proxy.ts: 5ms, application-code: 65ms)
+ GET /my-collection 200 in 71ms (next.js: 2ms, proxy.ts: 5ms, application-code: 64ms)
+ GET /my-collection 200 in 71ms (next.js: 3ms, proxy.ts: 4ms, application-code: 64ms)
+ GET /my-collection 200 in 83ms (next.js: 3ms, proxy.ts: 5ms, application-code: 75ms)
+ GET /my-collection 200 in 90ms (next.js: 2ms, proxy.ts: 6ms, application-code: 82ms)
+ GET /my-collection 200 in 81ms (next.js: 3ms, proxy.ts: 5ms, application-code: 72ms)
+ GET /my-collection 200 in 79ms (next.js: 3ms, proxy.ts: 6ms, application-code: 70ms)
+ GET /my-collection 200 in 80ms (next.js: 3ms, proxy.ts: 6ms, application-code: 71ms)
+ GET /my-collection 200 in 72ms (next.js: 3ms, proxy.ts: 7ms, application-code: 63ms)
+ GET /my-collection 200 in 87ms (next.js: 2ms, proxy.ts: 5ms, application-code: 80ms)
+ GET /my-collection 200 in 90ms (next.js: 2ms, proxy.ts: 6ms, application-code: 81ms)
+ GET /my-collection 200 in 88ms (next.js: 2ms, proxy.ts: 7ms, application-code: 79ms)
+ GET /my-collection 200 in 53ms (next.js: 4ms, proxy.ts: 6ms, application-code: 43ms)
+✓ Compiled in 10ms
+✓ Compiled in 24ms
+ GET /my-collection 200 in 339ms (next.js: 49ms, proxy.ts: 209ms, application-code: 82ms)
+ GET /my-collection 200 in 55ms (next.js: 2ms, proxy.ts: 6ms, application-code: 46ms)
+✓ Compiled in 25ms
+ GET / 200 in 689ms (next.js: 8ms, proxy.ts: 669ms, application-code: 12ms)
+ GET /my-collection 200 in 385ms (next.js: 3ms, proxy.ts: 4ms, application-code: 379ms)
